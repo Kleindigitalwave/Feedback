@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback Form - Retina Digital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        main.container {
+            margin-top: 2rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form.grid {
+            gap: 1rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Retina Digital</strong></li>
+        </ul>
+        <ul>
+            <li><a href="https://thisisretina.co.uk/">Home</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#referral" role="button">Referral Scheme</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>We Value Your Feedback</h2>
+        <p>Thank you for working with Retina Digital! We would greatly appreciate it if you could take 5 minutes to share your thoughts about your experience with us.</p>
+        
+        <form class="grid">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts about our service" required></textarea>
+
+            <label for="rating">Rate Your Experience:</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <p>If you're feeling generous with your time, please leave us a <a href="https://g.page/r/URL" target="_blank">Google Review</a>! Your feedback helps us grow and reach more amazing clients like you.</p>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <section id="referral">
+            <h3>Referral Scheme</h3>
+            <p>Do you know someone who could benefit from our services? Refer them to us, and when they commit to working with us and make their first payment, you'll receive a 10% commission on their initial installment.</p>
+            
+            <form class="grid">
+                <label for="referral-name">Referee's Name:</label>
+                <input type="text" id="referral-name" name="referral-name" placeholder="Enter the name of the person you're referring" required>
+
+                <label for="referral-email">Referee's Email:</label>
+                <input type="email" id="referral-email" name="referral-email" placeholder="Enter their email address" required>
+
+                <label for="referral-message">Additional Message (Optional):</label>
+                <textarea id="referral-message" name="referral-message" rows="4" placeholder="Add a personalized message if you'd like"></textarea>
+
+                <button type="submit">Submit Referral</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small>
+            <a href="https://thisisretina.co.uk/">Retina Digital</a> • <a href="https://g.page/r/URL" target="_blank">Google Review</a>
+        </small>
+    </footer>
+</body>
+</html>
